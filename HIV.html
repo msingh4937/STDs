@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>HIV/AIDS</title>
+    <style>
+      html, body{
+        height: 100%;
+        width: 100%;
+        font-family: 'poppins', sans-serif;
+        color: #222;
+      }
+      .navbar{
+        padding: .8rem;
+        height: 87px;
+      }
+      .navbar img{
+        width: 250px;
+        height:87px;
+      }
+      .navbar-nav li{
+        padding-right: 20px;
+      }
+      .nav-link{
+        font-size: 1.1em;
+      }
+      .carousel-inner img{
+        width: 100%;
+        min-height: 0%
+        
+      }
+      .carousel-caption{
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%)
+      }
+      .carousel-caption h1{
+        font-size:500%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+      }
+      .carousel-cation h3{
+        font-size: 200%;
+        font-weight: 500%;
+        text-shadow: 1px 1px 10px #000;
+        padding-bottom: 1rem;
+      }
+      .jumbotron{
+        padding: 1rem;
+        border-radius: 0
+      }
+      iframe{
+        width: 500px;
+        height: 300px;
+        transform: translateX(25%)
+      }
+      figure{
+        position: relative;
+        width: 100%;
+        height: 60%;
+        margin: 0 ;
+      }
+      #fixed {
+        /* The image used */
+        background-image: url("fixed_background2.jpg");
+
+        /* Set a specific height */
+        min-height: 100%; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .end{
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        text-align: center;
+      }
+      .end hr{
+        border-top: 2px solid #b4b4b4;
+        width: 95%;
+      }
+      .sub{
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        text-align: center;
+      }
+      .sub hr{
+        border-top: 2px solid #b4b4b4;
+        width: 95%;
+      }
+       .card {
+        height: 600px;
+      }
+      .card img{
+        height: 50%;
+      }
+      #modal1{
+        transform: translateX(77%)
+      }
+      
+      .footer{
+        background-color: #111;
+        height: 300px;
+        padding: 16px;
+        
+      }
+      .footer h1{
+        color: white;
+        text-align: center;
+      }
+      #gmail{
+			position: absolute;
+			width: 130px;
+			height: 130px;
+      cursor: pointer;
+			margin-top: 5.3%;
+			margin-left: 16%
+		}
+		
+		
+		#instagram{
+			position: absolute;
+			width: 80px;
+			height: 80px;
+      cursor: pointer;
+			margin-top: 7.4%;
+			margin-left: 38%
+		}
+		
+		#facebook{
+			position: absolute;
+			width: 93px;
+			height: 93px;
+      cursor: pointer;
+			margin-top: 7.0%;
+			margin-left: 56%
+		}
+		
+		#googleplus{
+			position: absolute;
+			width: 97px;
+			height: 97px;
+      cursor: pointer;
+			margin-top: 7.0%;
+			margin-left: 76%
+		}
+    #gmail:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		
+		#instagram:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		
+		#facebook:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+		
+		#googleplus:hover{
+			transition: 1s;
+			transform: rotate(360deg);
+		}
+      
+      
+    
+    
+    </style>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- -Navbar- -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src ="logo.png"></a>
+      <button class = "navbar-toggler" type="button" data-toggole="collapse" 
+      data-target="#navbarResponsive">
+        <span class= "navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="HIV.html">HIV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Syphilis.html">Syphilis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="HPV.html">HPV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Prevention.html">Prevention</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+        </ul>
+     </div>
+  </div>
+  </nav>
+     <!-- Image Slider -->
+   <div id="slides" class="carousel slide" data-ride = "carousel">
+     <ul class="carousel-indicators">
+       <li data-target="#slides" data-slide-to="0" class="active"></li>
+       <li data-target="#slides" data-slide-to="1"></li>
+       <li data-target="#slides" data-slide-to="2"></li>
+     </ul>
+     <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src= "HivImgB.jpg">
+        </div>
+            
+        
+        <div class="carousel-item">
+            <img src= "HivImgB2.jpg">
+        </div>
+        
+        <div class="carousel-item">
+            <img src= "HivImgB3.jpg">
+        </div>
+     </div>
+   </div>
+   <!-- Jumbotron -->
+   <div class="container-fluid">
+     <div class="row jumbotron">
+      <div class=" col-lg-6 ">
+        <p class="lead">HIV is a virus that attacks the immune system. If untreated, 
+            a person’s immune system will eventually be completely destroyed.<br>
+                HIV is found in semen, blood, vaginal and anal fluids, and breast milk.
+            </p>
+      </div>
+      <div class="col-lg-6">
+        <p class="lead">AIDS refers to a set of symptoms and illnesses that occur at 
+            the very final stage of HIV infection. AIDS is not a virus but a set of symptoms 
+            (or syndrome) caused by the HIV virus.</p>
+      </div>
+     </div>
+   </div>
+
+
+      <!--Extra Info-->
+      <div class="container-fluid padding">
+          <div class="end">
+              <h1 class="display-4">What does it do?</h1>
+             <hr>
+              <p class="lead">HIV attacks the body’s immune system, specifically the CD4 cells (T cells), 
+                  which help the immune system fight off infections. Untreated, HIV reduces the number of 
+                  CD4 cells (T cells) in the body, making the person more likely to get other infections or 
+                  infection-related cancers. Over time, HIV can destroy so many of these cells that the body 
+                  can’t fight off infections and disease. AIDS is the most severe phase of HIV infection. People 
+                  with AIDS have such badly damaged immune systems that they get an increasing number of severe 
+                  illnesses, called opportunistic infections.</p>
+          </div>
+         </div>
+        </div>
+
+     
+
+      <hr class="my-4">
+      <!-- Fixed background -->
+      <figure>
+        <div id="fixed">
+   
+        </div>
+     </figure>
+     <hr class="my-4">
+
+   <!--Ideology-->
+   <div class="container-fluid padding">
+     <div class="row padding">
+        <div class="col-lg-6">
+          <h2>What Can You Do?</h2>
+          <p>If HIV is left untreated, it may take up to 10 or 15 years for the immune system 
+            to be so severely damaged it can no longer defend itself at all. However, the speed 
+            HIV progresses will vary depending on age, health and background.  </p>
+            <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Antiretroviral</button>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Antiretroviral</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>working against or targeted against retroviruses, especially HIV.(Antiretroviral therapy)</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <br>
+              
+          <p> There is effective Antiretroviral treatment available so people with HIV can live 
+            a normal, healthy life. The earlier HIV is diagnosed, the sooner treatment can start 
+            – leading to better long term health. So regular testing for HIV is important.</p>
+          
+          </div>
+
+          <!--Video-->
+          <iframe src="https://www.youtube.com/embed/YxfOu_aTzH8" allowfullscreen></iframe>
+        
+     </div>
+   </div>
+   <hr class="my-4">
+    
+ <!--STDS Topics-->
+ <div class="container-fluid padding">
+    <div class="sub">
+        <h1 class="display-4"> 3 Main Stages</h1>
+       <hr>
+    </div>
+  </div>
+<!--Cards for the Subtopics
+Three column -->
+  <div class="container-fluid padding">
+  <div class="row padding">
+    <div class="col-sm-4">
+      <div class="card">
+          <img class="card-img-top" src="CHiv_img.png">
+        <div class="card-body">
+          <h5 class="card-title">Acute HIV infection</h5>
+          <p class="card-text">Around one to four weeks after becoming infected with HIV, 
+            some people will experience symptoms that can feel a lot like flu. Symptoms can include:
+            fever (raised temperature), body rash, ore throat, swollen glands, headache, upset stomach.
+             It may be too early to get an accurate HIV test result at this stage (depending on the type 
+             of HIV test, it can take anything from a few weeks to a few months for HIV to show up).</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+          <img class="card-img-top" src="CHiv_img2.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Clinical Latency Stage</h5>
+          <p class="card-text">During this stage of the disease, HIV continues to multiply in the 
+            body but at very low levels. People with chronic HIV infection may not have any HIV-related 
+            symptoms, but they can still spread HIV to others. Without treatment with HIV medicines, chronic 
+            HIV infection usually advances to AIDS in 10 years or longer, though it may take less time for some people.</p>
+          
+        </div>
+      </div>
+    </div>
+  
+  <div class="col-sm-4">
+      <div class="card">
+          <img class="card-img-top" src="CHiv_img3.jpg" >
+        <div class="card-body">
+          <h5 class="card-title">AIDS</h5>
+          <p class="card-text">AIDS is the final, most severe stage of HIV infection. Because HIV has severely damaged the immune 
+            system, the body can’t fight off opportunistic infections.  People with HIV are diagnosed with AIDS if they have a CD4 
+            count of less than 200 cells/mm3 or if they have certain opportunistic infections. Without treatment, people with AIDS 
+            typically survive about 3 years.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  <!-- Modal -->
+  <div class="container">
+      <div id="modal1">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Opportunistic infections</button>
+    
+      <!-- Modal -->
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Opportunistic infections (OI)</h4>
+            </div>
+            <div class="modal-body">
+              <p>An infection that occurs more frequently or is more severe in people with weakened immune systems, such as people with 
+                HIV or people receiving chemotherapy, than in people with healthy immune systems.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <br>
+   
+
+   
+  
+
+    <div class="container-fluid">
+    <div class="footer">
+      <h1> Connect With Us </h1>
+      <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=msingh4937@baysidehighschool.org&tf=1" target="_blank"><img src="gmail.png" id="gmail"></a>
+		<a href="https://www.instagram.com/haripatel1204" target="_blank"> <img src="instagram.png" id="instagram"> </a>
+		<a href="https://www.facebook.com/alvin.dai.96?ref=bookmarks" target="_blank"><img src="facebook.png" id="facebook"></a>
+		<a href="https://plus.google.com/s/evxreaction/top" target="_blank"><img src="google_plus.png" id="googleplus"> </a>
+    </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Health Tackle</title>
+    <style>
+      html, body{
+        height: 100%;
+        width: 100%;
+        font-family: 'poppins', sans-serif;
+        color: #222;
+      }
+      .navbar{
+        padding: .8rem;
+        height: 87px;
+      }
+      .navbar img{
+        width: 250px;
+        height:87px;
+      }
+      .navbar-nav li{
+        padding-right: 20px;
+      }
+      .nav-link{
+        font-size: 1.1em ;
+      }
+      .carousel-inner img{
+        width: 100%;
+        height: 5%
+        
+      }
+      .carousel-caption{
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%)
+      }
+      .carousel-caption h1{
+        font-size:500%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+      }
+      .carousel-cation h3{
+        font-size: 200%;
+        font-weight: 500%;
+        text-shadow: 1px 1px 10px #000;
+        padding-bottom: 1rem;
+      }
+      .jumbotron{
+        padding: 1rem;
+        border-radius: 0
+      }
+      iframe{
+        width: 500px;
+        height: 300px;
+        transform: translateX(25%)
+      }
+      figure{
+        position: relative;
+        width: 100%;
+        height: 60%;
+        margin: 0;
+      }
+      #fixed {
+        /* The image used */
+        background-image: url("fixedbk.jpg");
+
+        /* Set a specific height */
+        min-height: 100%; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .end{
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        text-align: center;
+      }
+      .end hr{
+        border-top: 2px solid #b4b4b4;
+        width: 95%;
+      }
+      .sub{
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        text-align: center;
+      }
+      .sub hr{
+        border-top: 2px solid #b4b4b4;
+        width: 95%;
+      }
+       .card {
+        height: 560px;
+      }
+      
+      .card img{
+        height: 50%;
+      }
+      
+      .footer{
+        background-color: #111;
+        height: 300px;
+        padding: 16px;
+        
+      }
+      .footer h1{
+        color: white;
+        text-align: center;
+      }
+      #gmail{
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      cursor: pointer;
+      margin-top: 5.3%;
+      margin-left: 16%
+    }
+    
+    
+    #instagram{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      margin-top: 7.4%;
+      margin-left: 38%
+    }
+    
+    #facebook{
+      position: absolute;
+      width: 93px;
+      height: 93px;
+      cursor: pointer;
+      margin-top: 7.0%;
+      margin-left: 56%
+    }
+    
+    #googleplus{
+      position: absolute;
+      width: 97px;
+      height: 97px;
+      cursor: pointer;
+      margin-top: 7.0%;
+      margin-left: 76%
+    }
+    #gmail:hover{
+      transition: 1s;
+      transform: rotate(360deg);
+    }
+    
+    #instagram:hover{
+      transition: 1s;
+      transform: rotate(360deg);
+    }
+    
+    #facebook:hover{
+      transition: 1s;
+      transform: rotate(360deg);
+    }
+    
+    #googleplus:hover{
+      transition: 1s;
+      transform: rotate(360deg);
+    }
+    
+    
+    </style>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- -Navbar- -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src ="logo.png"></a>
+      <button class = "navbar-toggler" type="button" data-toggole="collapse" 
+      data-target="#navbarResponsive">
+        <span class= "navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="HIV.html">HIV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Syphilis.html">Syphilis</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="HPV.html">HPV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Prevention.html">Prevention</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+        </ul>
+     </div>
+  </div>
+  </nav>
+     <!-- Image Slider -->
+   <div id="slides" class="carousel slide" data-ride = "carousel">
+     <ul class="carousel-indicators">
+       <li data-target="#slides" data-slide-to="0" class="active"></li>
+       <li data-target="#slides" data-slide-to="1"></li>
+       <li data-target="#slides" data-slide-to="2"></li>
+     </ul>
+     <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src= "bk1.jpg"> <!--add pics with differnt names-->
+        </div>
+            <div class="carousel-caption">
+              <h1 class="display-2">Human Papillomaviruses</h1>
+              
+            </div>
+        
+        <div class="carousel-item">
+            <img src= "bk2.jpg">
+        </div>
+        
+        <div class="carousel-item">
+            <img src= "bk3.jpg">
+        </div>
+     </div>
+   </div>
+   <!-- Jumbotron -->
+   <div class="container-fluid">
+     <div class="row jumbotron">
+      <div class=" col-lg-6 ">
+        <p class="lead">HPV: About 79 million Americans are currently infected with HPV. 
+          About 14 million people become newly infected each year. HPV is so common 
+          that almost every person who is sexually-active will get HPV at some time 
+          in their life if they don’t get the HPV vaccine.</p>
+      </div>
+      <div class="col-lg-6">
+        <p class="lead">Most people with HPV do not know they are 
+          infected and never develop symptoms or health problems 
+          from it. Some people find out they have HPV when they get 
+          genital warts.</p>
+      </div>
+     </div>
+   </div>
+
+   <!--Ideology-->
+   <div class="container-fluid padding">
+     <div class="row padding">
+        <div class="col-lg-6">
+          <h2>Facts on HPV</h2>
+          <p>It is most commonly spread during vaginal or anal sex. 
+            HPV can be passed even when an infected person has no signs 
+            or symptoms. Anyone who is sexually active can get HPV, even
+            if you have had sex with only one person. You also can develop 
+            symptoms years after you have sex with someone who is infected. 
+            This makes it hard to know when you first became infected. 
+            Catch-up vaccines are recommended for boys and men through age 
+            21 and for girls and women through age 26, if they did not get 
+            vaccinated when they were younger.</p>
+          <br>
+          </div>
+
+          <!--Video-->
+          <iframe src="https://www.youtube.com/embed/qvxUr3gRAa0" allowfullscreen></iframe>
+        
+     </div>
+   </div>
+    
+   <hr class="my-4">
+   <!--Extra Info-->
+   <div class="container-fluid padding">
+     <div class="end">
+         <h1 class="display-4">What is HPV?</h1>
+        <hr>
+         <p class="lead">HPV is a group of more than 150 related viruses. Each HPV virus in this large 
+           group is given a number which is called its HPV type. HPV is named for the warts (papillomas) 
+           some HPV types can cause. Some other HPV types can lead to cancer. Men and women can get cancer 
+           of mouth/ throat, and anus/rectum caused by HPV infections. Men can also get penile HPV cancer. 
+           In women, HPV infection can also cause cervical, vaginal, and vulvar HPV cancers. But there are 
+           vaccines that can prevent infection with the types of HPV that most commonly cause cancer.</p>
+     </div>
+    </div>
+   </div>
+   <hr class="my-4">
+   <!-- Fixed background -->
+   <figure>
+     <div id="fixed">
+
+     </div>
+  </figure>
+  <!--STDS Topics-->
+   <div class="container-fluid padding">
+      <div class="sub">
+          <h1 class="display-4">HPV Concerns</h1>
+         <hr>
+      </div>
+    </div>
+  <!--Cards for the Subtopics
+  Three column -->
+    <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-sm-4">
+        <div class="card">
+            <img class="card-img-top" src="subpic1.jpg">
+          <div class="card-body">
+            <h5 class="card-title">How do people get HVP?</h5>
+            <p class="card-text">HPV is common virus that infects teens and adults. 
+      80% of people will get an HPV infection in their lifetime. 
+      HPV vaccine is cancer prevention. Learn six reasons to get HPV vaccine for your child in this listicle. 
+      HPV is transmitted through intimate skin-to-skin contact. 
+      You can get HPV by having vaginal, anal, or oral sex with someone who has the virus. 
+      It is most commonly spread during vaginal or anal sex. 
+      HPV is so common that nearly all men and women get it at some point in their lives.</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card">
+            <img class="card-img-top" src="subpic2.jpg">
+          <div class="card-body">
+            <h5 class="card-title">HPV and Cancer</h5>
+            <p class="card-text">Cancer often takes years, even decades, to develop after a 
+              person gets HPV. The types of HPV that can cause genital warts are not the same 
+              as the types of HPV that can cause cancers. There is no way to know which people 
+              who have HPV will develop cancer or other health problems. People with weak immune 
+              systems (including individuals with HIV/AIDS) may be less able to fight off HPV and 
+              more likely to develop health problems from it.HPV cancers include cancer of the cervix,
+              vulva, vagina, penis, or anus.</p>
+            
+          </div>
+        </div>
+      </div>
+    
+    <div class="col-sm-4">
+        <div class="card">
+            <img class="card-img-top" src="subpic3.jpg" >
+          <div class="card-body">
+            <h5 class="card-title">HPV and Health Problems?</h5>
+            <p class="card-text">In most cases, HPV goes away on its own and does not cause 
+              any health problems. But when HPV does not go away, it can cause health problems 
+              like genital warts and cancer. Genital warts usually appear as a small bump or 
+              group of bumps in the genital area. They can be small or large, raised or flat, 
+              or shaped like a cauliflower. A healthcare provider can usually diagnose warts by 
+              looking at the genital area.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <div class="container">
+    <div id="hpvm1">
+    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Listicle</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Listicle</h4>
+      </div>
+      <div class="modal-body">
+        <p>a piece of writing or other content presented wholly or partly in the form of a list.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </div>
+    </div>
+    <br>
+    <br>
+   
+
+    
+
+
+    <div class="container-fluid">
+    <div class="footer">
+      <h1> Connect With Us </h1>
+      <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=msingh4937@baysidehighschool.org&tf=1" target="_blank"><img src="gmail.png" id="gmail"></a>
+    <a href="https://www.instagram.com/haripatel1204" target="_blank"> <img src="instagram.png" id="instagram"> </a>
+    <a href="https://www.facebook.com/alvin.dai.96?ref=bookmarks" target="_blank"><img src="facebook.png" id="facebook"></a>
+    <a href="https://plus.google.com/s/evxreaction/top" target="_blank"><img src="google_plus.png" id="googleplus"> </a>
+    </div>
+    </div>
+
+</body>
+</html>
